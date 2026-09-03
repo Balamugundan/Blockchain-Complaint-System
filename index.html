@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure, Transparent & Tamper-Proof Complaint Portal using Blockchain Technology.">
+    <title>Blockchain Complaint Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="blockchain-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            <span>Blockchain Powered</span>
+        </div>
+        <h1><span class="gradient-text">Blockchain Complaint Management System</span></h1>
+        <p>Secure, Transparent & Tamper-Proof Complaint Portal</p>
+    </header>
+    <main>
+        <div class="features-grid stagger-children">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Security</h3>
+                <p>Submit complaints securely using cryptography.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>Transparency</h3>
+                <p>Track your complaints transparently in real-time.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+                <h3>Immutability</h3>
+                <p>Tamper-proof records stored permanently on chain.</p>
+            </div>
+        </div>
+
+        <div class="cta-section animate-on-scroll">
+            <h2>Welcome!</h2>
+            <p>This website allows users to submit complaints securely using blockchain technology.</p>
+            <div class="buttons">
+                <a href="login.html"><button class="btn-primary">Login</button></a>
+                <a href="register.html"><button class="btn-secondary">Register</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Blockchain Complaint Management System</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
+            observer.observe(el);
+        });
+    });
+    </script>
+</body>
+</html>
